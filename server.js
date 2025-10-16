@@ -39,8 +39,9 @@ app.delete("/api/todos/completed", (req, res) => {
   res.json({ message: "Deleted completed todos" });
 });
 
-
-const PORT = process.env.PORT || 5000;  
+// Start the server
+const PORT = process.env.PORT || 5000; // Use Render's PORT or default 5000
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
